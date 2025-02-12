@@ -85,6 +85,30 @@ RECIPIENT_WHATSAPP_NUMBER=recipient_number
 - Adjust stock symbols as needed.
 - Ensure Twilio and API service quotas are sufficient.
 
+## Required Skills
+1. Python programming
+2. API integration
+3. Data cleaning with Pandas
+4. Cloud deployment (AWS/GCP)
+5. Automation & scheduling
+6. WhatsApp API (Twilio)
+7. Financial market analysis
+8. Environment variable management
+9. Error handling & logging
+10. Data visualization (optional)
+
+## SEO Keywords
+- Real-time stock alerts
+- Stock market news automation
+- WhatsApp stock notifications
+- Automated trading alerts
+- Twilio WhatsApp API
+- Financial data analysis
+- Alpha Vantage stock data
+- News API stock news
+- Cloud-based stock tracking
+- Python stock market bot
+
 ## References & Acknowledgments
 - [NewsAPI.org](https://newsapi.org)
 - [Alpha Vantage](https://www.alphavantage.co)
