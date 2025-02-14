@@ -10,9 +10,13 @@ Investors require timely and relevant information about stock price movements an
 - Delivering structured alerts via WhatsApp
 
 ## Methodology & Approach
-1. **Twilio**: Login to Twilio -> Go to send a whatsapp message -> Connect to  Whatsapp sandox -> Go to whatsapp -> Send confirmation message
+1. **Twilio**: Login to Twilio -> Go to send a whatsapp message -> Connect to  Whatsapp sandox -> Go to whatsapp -> Send confirmation 
+message
+
+![whatsapp_notification](../assets/jupyter_notebook.jpg)
 
 Once connected, you can run the python file to send the message to the connected number
+
 
 1. **Data Collection**: Fetch stock price and news data using APIs.
 2. **Data Cleaning**: Process and structure data using **Pandas**.
