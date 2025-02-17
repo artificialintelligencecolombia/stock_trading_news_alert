@@ -97,8 +97,8 @@ NEWS_URL=https://newsapi.org/v2/everything
 ## Required Skills
 1. Python programming
 2. API integration
-3. Data cleaning with Pandas
-4. Cloud deployment (AWS/GCP)
+3. JSON data structures
+4. Cloud deployment
 5. Automation & scheduling
 6. WhatsApp API (Twilio)
 7. Financial market analysis
@@ -122,5 +122,4 @@ NEWS_URL=https://newsapi.org/v2/everything
 - [NewsAPI.org](https://newsapi.org)
 - [Alpha Vantage](https://www.alphavantage.co)
 - [Twilio](https://www.twilio.com/)
-- [Pandas Documentation](https://pandas.pydata.org/)
 - [Python Requests Library](https://docs.python-requests.org/)
