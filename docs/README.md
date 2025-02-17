@@ -17,12 +17,11 @@ message
 
 Once connected, you can run the python file to send the message to the connected number
 
-
-1. **Data Collection**: Fetch stock price and news data using APIs.
-2. **Data Cleaning**: Process and structure data using **Pandas**.
-3. **Message Formatting**: Extract key insights and structure messages.
-4. **Automated Delivery**: Send messages via **Twilio**'s WhatsApp API.
-5. **Deployment**: Schedule execution on the cloud for daily updates.
+1. **Data Collection**: Fetch stock price and news data using Alphavantage API and News API.
+2. **Data Cleaning**: Process and structure json data with ETL methodology.
+3. **Message Formatting**: Extract key insights and structure messages format.
+4. **Automated Delivery**: Send real-time messages to clients via **Twilio**'s WhatsApp API.
+5. **Deployment**: Schedule execution on the cloud for daily updates (Python Anywhere).
 
 ## Technical Architecture
 **Components:**
@@ -30,19 +29,19 @@ Once connected, you can run the python file to send the message to the connected
   - [NewsAPI.org](https://newsapi.org) - Fetches stock-related news.
   - [Alpha Vantage](https://www.alphavantage.co) - Retrieves stock price data.
   - [Twilio](https://www.twilio.com/) - Sends WhatsApp messages.
-- **Data Processing:** Pandas for data cleaning and structuring.
+- **Data Processing:** for data cleaning and structuring, ETL techniques were intruduced.
 - **Automation & Deployment:** Cloud-based execution scheduler.
 
 ## Implementation Details
 1. Retrieve stock price movements using Alpha Vantage.
 2. Fetch relevant stock-related news from NewsAPI.
-3. Clean and format data using Pandas.
+3. Clean and format data using ETL.
 4. Structure a WhatsApp message summarizing the stock movement and news.
 5. Send the message to stakeholders using Twilio’s API.
 6. Deploy on the cloud for scheduled execution at a predefined time daily.
 
 ## Results & Impact
-- **Automated alerts** keep investors updated without manual tracking.
+- **Automated alerts** keep investors updated in a daily basis without manual tracking.
 - **Faster decision-making** based on real-time market insights.
 - **Scalability** through cloud deployment for multiple stock tracking.
 - **Improved investor engagement** with timely updates.
@@ -56,22 +55,24 @@ Once connected, you can run the python file to send the message to the connected
 ## Technical Setup & Requirements
 ### Dependencies
 - Python (>=3.8)
-- Pandas
-- Requests
-- Twilio API
+- HTTP Requests
+- Twilio Whatsapp API
 - Alpha Vantage API
 - NewsAPI.org API
-- Cloud scheduling service (e.g., AWS Lambda, Google Cloud Functions)
+- Cloud scheduling service (e.g., AWS Lambda, Google Cloud Functions, Python Anywhere)
 
 ### Environment Variables
 Set the following environment variables:
 ```
+ALPHA_API_KEY=your_alpha_vantage_api_key
 NEWS_API_KEY=your_news_api_key
-ALPHA_VANTAGE_KEY=your_alpha_vantage_api_key
-TWILIO_SID=your_twilio_sid
+TWILIO_ACCOUNT_SID=your_twilio_sid
 TWILIO_AUTH_TOKEN=your_twilio_auth_token
-TWILIO_WHATSAPP_NUMBER=your_twilio_whatsapp_number
-RECIPIENT_WHATSAPP_NUMBER=recipient_number
+FROM_WPP=your_twilio_whatsapp_number
+TO_WPP=whatsapp=recipient_number
+ALPHA_URL=https://www.alphavantage.co/query?
+ALPHA_SYMBOL_SEARCH_URL=https://www.alphavantage.co/query?
+NEWS_URL=https://newsapi.org/v2/everything
 ```
 
 ## Usage Instructions
